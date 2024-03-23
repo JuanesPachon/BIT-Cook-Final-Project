@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,166 @@
 
     <link rel='preload' href='css/recipe.css' as='style'>
     <link rel='stylesheet' href='css/recipe.css'>
-    
+
     <link rel='preload' href='css/normalize.css' as='style'>
     <link rel='stylesheet' href='css/normalize.css'>
-    
+
     <link rel='icon' href='images/favicon.png' type='image/x-icon'>
-    
+
     <title>BIT Cook Recipe</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar__item header__navbar__item--left"><a href="">BITCook</a></li>
+                <li class="header__navbar__item header__navbar__item--right"><a href="">Send your recipe</a></li>
+                <li class="header__navbar__item header__navbar__item--right">
+                    <img src="assets/img/dark-mode-icon.png" alt="Dark Mode Icon" />
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="main__recipe">
+
+            <picture>
+                <source srcset="assets/img/simple_omelette.webp" type="img/webp">
+                <img class="main__recipe__image" src="assets/img/simple_omelette.webp" alt="Recipe Image">
+            </picture>
+
+            <h1 class="main__recipe__title">Simple Omelette Recipe</h1>
+
+            <p class="main__recipe__description">An easy and quick dish, perfect for any meal. This classic omelette combines
+                beaten
+                eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+            </p>
+
+            <div class="main__recipe__details">
+                <h3 class="main__recipe__details__title">Preparation time</h3>
+
+                <ul class="main__recipe__details__list">
+                    <li class="main__recipe__details__list__item"><strong>Total</strong>: Approximately 10 minutes.</li>
+                    <li class="main__recipe__details__list__item"><strong>Preparation:</strong> 5 minutes.</li>
+                    <li class="main__recipe__details__list__item"><strong>Cooking:</strong> 5 minutes.</li>
+                </ul>
+
+            </div>
+
+            <div class="main__recipe__instructions">
+
+                <h2 class="main__recipe__instructions__title">Instructions</h2>
+          
+                <ol class="main__recipe__instructions__list">
+          
+                  <li class="main__recipe__instructions__list__item"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of
+                    salt and pepper. You can add a tablespoon of water or milk for a fluffier texture.
+                    until they are well mixed.</li>
+                  <li class="main__recipe__instructions__list__item"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium
+                    heat and add
+                    butter or oil.</li>
+                  <li class="main__recipe__instructions__list__item"><strong>Cook the omelette:</strong> Once the butter is melted and
+                    bubbling, pour in the
+                    eggs. Tilt the pan to ensure
+                    the eggs evenly coat the surface.</li>
+                  <li class="main__recipe__instructions__list__item"><strong>Add fillings (optional):</strong> When the eggs begin to set at
+                    the edges but are
+                    still slightly runny in the
+                    middle, sprinkle your chosen fillings over one half of the omelette.</li>
+                  <li class="main__recipe__instructions__list__item"><strong>Fold and serve:</strong> As the omelette continues to cook,
+                    carefully lift one
+                    edge and fold it over the
+                    fillings. Let it cook for another minute, then slide it onto a plate.</li>
+                  <li class="main__recipe__instructions__list__item"><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if
+                    needed.</li>
+          
+                </ol>
+          
+              </div>
+
+        </section>
+
+        <section class="main__ingredients">
+
+            <h2 class="main__ingredients__title">Ingredients</h2>
+            <ul class="main__ingredients__list">
+                <li class="main__ingredients__list__item">2 - 3 large eggs.</li>
+                <li class="main__ingredients__list__item">Salt, to taste.</li>
+                <li class="main__ingredients__list__item">Pepper, to taste.</li>
+                <li class="main__ingredients__list__item">1 teablespoon of butter or oil.</li>
+                <li class="main__ingredients__list__item">Optional fillings: cheese, diced vegetables, cooked meats, herbs.</li>
+            </ul>
+
+            <h2 class="main__ingredients__nutrition-title">Nutrition</h2>
+            <div class="main__ingredients__nutrition">
+                <div class="main__ingredients__nutrition__info">
+                    <p class="main__ingredients__nutrition__info__text">Calories</p>
+                    <p class="main__ingredients__nutrition__info__text">Carbs</p>
+                    <p class="main__ingredients__nutrition__info__text">Protein</p>
+                    <p class="main__ingredients__nutrition__info__text">Fat</p>
+                </div>
+                <div class="main__ingredients__nutrition__info">
+                    <p class="main__ingredients__nutrition__info__text main__ingredients__nutrition__info__text--values">277Kcal</p>
+                    <p class="main__ingredients__nutrition__info__text main__ingredients__nutrition__info__text--values">0g</p>
+                    <p class="main__ingredients__nutrition__info__text main__ingredients__nutrition__info__text--values">20g</p>
+                    <p class="main__ingredients__nutrition__info__text main__ingredients__nutrition__info__text--values">22g</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main__more-recipes">
+
+            <h2 class="main__more-recipes__title">More recipes</h2>
+
+            <div class="main__more-recipes__recipe">
+                <picture>
+                    <source srcset="assets/img/simple_omelette.webp" type="img/webp">
+                    <img class="main__more-recipes__image" src="assets/img/simple_omelette.webp" alt="Recipe Image">
+                </picture>
+
+                <div class="main__more-recipes__recipe__info">
+                    <h4 class="main__more-recipes__recipe__info__title">Ad lorem ipsum</h4>
+                    <p class="main__more-recipes__recipe__info__description">they say everything looks better</p>
+                </div>
+            </div>
+
+            <div class="main__more-recipes__recipe">
+                <picture>
+                    <source srcset="assets/img/simple_omelette.webp" type="img/webp">
+                    <img class="main__more-recipes__image" src="assets/img/simple_omelette.webp" alt="Recipe Image">
+                </picture>
+
+                <div class="main__more-recipes__recipe__info">
+                    <h4 class="main__more-recipes__recipe__info__title">Ad lorem ipsum</h4>
+                    <p class="main__more-recipes__recipe__info__description">they say everything looks better</p>
+                </div>
+            </div>
+
+            <div class="main__more-recipes__recipe">
+                <picture>
+                    <source srcset="assets/img/simple_omelette.webp" type="img/webp">
+                    <img class="main__more-recipes__image" src="assets/img/simple_omelette.webp" alt="Recipe Image">
+                </picture>
+
+                <div class="main__more-recipes__recipe__info">
+                    <h4 class="main__more-recipes__recipe__info__title">Ad lorem ipsum</h4>
+                    <p class="main__more-recipes__recipe__info__description">they say everything looks better</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__item footer__item--title">Bitcook</p>
+        <p class="footer__item">© 2024 Bogotá Institute of Technology.</p>
+    </footer>
+
 </body>
+
 </html>
