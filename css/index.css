@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+
+:root {
+  --light-brown: #7e4333;
+  --first-font: "DM Serif Display", serif;
+  --secundary-font: "DM Sans", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Background Title ==========================================*/
+
+.main {
+    margin: 2rem .625rem;
+}
+
+.main__background {
+    height: 18.4rem;
+    background-image: url(../assets/img/simple_omelette.webp);
+    position: relative;
+    background-position: 5% 55%;
+    background-size: 65rem;
+    border-radius: 8px;
+}
+
+.main__background__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 100%;
+    border-radius: 8px;
+}
+
+.main__background__info__title {
+    font-size: 2.8rem;
+    text-align: center;
+    color: white;
+    padding: 0 15px;
+}
+
+
+/* Main-section */
+
+.main__recipes-title {
+    font-size: clamp(1.6rem, 6.06vw, 6.06vw);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.main__recipes__article {
+    border: solid 3px black;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.main__recipes__article__image {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.main__recipes__article__title {
+    font-size: clamp(1.8rem, 6.43vw, 6.43vw);
+}
+
+.main__recipes__article__list {
+    padding: 0 20px;
+}
+
+.main__recipes__article__list__item {
+    padding: 0;
+    font-size: clamp(.9rem, 3.036vw, 3.036vw);
+}
