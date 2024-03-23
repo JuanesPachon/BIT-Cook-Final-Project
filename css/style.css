@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+
+:root {
+  --bg-color: #f3e5d8;
+  --green: #255538;
+  --light-brown: #7e4333;
+  --first-font: "DM Serif Display", serif;
+  --secundary-font: "DM Sans", sans-serif;
+}
+
+/* DARK MODE =============================================================*/
+
+.dark-mode body {
+    background-color: black;
+}
+
+
+
+/* Globales ===========================================================*/
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--first-font);
+}
+
+/* Navbar ==============================================================*/
+
+.header__navbar {
+    background-color: var(--green);
+    color: white;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.header__navbar-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10.5px 20px;
+    list-style: none;
+}
+
+.header__navbar__item--left {
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+
+.header__navbar__item--right {
+    font-size: .8rem;
+    font-family: var(--secundary-font);
+}
+
+.header__navbar__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__navbar__item--right img {
+    margin-left: 1.8rem;
+    margin-bottom: -4px;
+    height: 1.7rem;
+}
+
+/* footer ==============================================================*/
+
+.footer {
+    background-color: #255538;
+    height: 70px;
+    border-radius: 6px 6px 0 0;
+    margin: 0 .625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    column-gap: 30px;
+}
+
+.footer__item {
+    margin: 0;
+    color: white;
+    font-family: var(--secundary-font);
+    font-size: clamp(.58rem, 2.67vw, 2.67vw);
+}
+
+.footer__item--title {
+    font-size: clamp(1.2rem, 4.3vw, 4.3vw);
+    font-family: var(--first-font);
+}
