@@ -124,6 +124,10 @@ html {
 
 /* More Recipes Section */
 
+.main__more-recipes {
+  margin-bottom: 3rem;
+}
+
 .main__more-recipes__recipe {
   color: black;
 }
@@ -157,4 +161,23 @@ html {
 
 .main__more-recipes__recipe__info__description {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+
+  .main__recipe,
+  .main__ingredients,
+  .main__more-recipes {
+    padding: 1rem 1.5rem;
+  }
+
+  .main__more-recipes__image {
+    width: 6rem;
+    height: 5rem;
+    margin-left: .5rem;
+  }
+
+  .main__more-recipes__recipe__info {
+    padding-left: 2rem;
+  }
 }

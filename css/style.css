@@ -97,6 +97,10 @@ body {
     text-decoration: none;
 }
 
+.footer__item--title p {
+    margin: 0;
+}
+
 .footer__item:last-child {
     padding-left: 2.2rem;
     text-align: end;
