@@ -15,6 +15,11 @@ html {
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Background Title ==========================================*/
 
 .main {
@@ -71,6 +76,9 @@ html {
 
 .main__recipes__article__title {
     font-size: clamp(1.8rem, 6.43vw, 6.43vw);
+    color: var(--light-brown);
+    font-family: var(--first-font);
+    margin: 1.5rem 0;
 }
 
 .main__recipes__article__list {
@@ -80,4 +88,5 @@ html {
 .main__recipes__article__list__item {
     padding: 0;
     font-size: clamp(.9rem, 3.036vw, 3.036vw);
+    font-family: var(--secundary-font);
 }

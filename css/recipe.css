@@ -19,6 +19,10 @@ html {
   box-sizing: inherit;
 }
 
+.main__more-recipes__recipe__link {
+  text-decoration: none;
+}
+
 .main__recipe__description,
 .main__recipe__details__list__item,
 .main__recipe__instructions__list__item,
@@ -119,6 +123,10 @@ html {
 }
 
 /* More Recipes Section */
+
+.main__more-recipes__recipe {
+  color: black;
+}
 
 .main__more-recipes__title{
   margin-bottom: .7rem;

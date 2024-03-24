@@ -94,8 +94,10 @@ body {
 .footer__item--title {
     font-size: clamp(1.2rem, 4.3vw, 4.3vw);
     font-family: var(--first-font);
+    text-decoration: none;
 }
 
 .footer__item:last-child {
     padding-left: 2.2rem;
+    text-align: end;
 }
