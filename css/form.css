@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
+
+:root {
+  --green: #255538;
+  --light-brown: #7e4333;
+  --grey: #DFDFDF;
+
+  --first-font: "DM Serif Display", serif;
+  --secundary-font: "DM Sans", sans-serif;
+}
+
+/* Globales */
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Form Description */
+
+.main {
+  margin: 2.3rem .5rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.main__title {
+  font-size: clamp(2rem, 7.08vw, 7.08vw);
+  margin: 0;
+  color: var(--light-brown);
+}
+
+.main__description {
+  font-family: var(--secundary-font);
+  font-size: clamp(0.8rem, 2.85vw, 2.85vw);
+}
+
+/*  Form */
+
+.main__form {
+  margin-top: 1.2rem;
+}
+
+.main__form__label {
+  font-size: clamp(1.2rem, 4.25vw, 4.25vw);
+  color: var(--light-brown);
+}
+
+.main__form__input,
+.main__form__textarea {
+  width: 100%;
+  height: 2rem;
+  border-radius: 6px;
+  border-style: none;
+  background-color: var(--grey);
+  margin: .9rem 0;
+  font-family: var(--secundary-font);
+  padding: .5rem;
+}
+
+.main__form__textarea {
+  height: 8.6rem;
+  resize: none;
+}
+
+.main__form__submit {
+  margin-top: .5rem;
+  width: 100%;
+  background-color: var(--green);
+  border-radius: 6px;
+  height: 2.5rem;
+  font-family: var(--secundary-font);
+  color: white;
+  cursor: pointer;
+}
+
+
+

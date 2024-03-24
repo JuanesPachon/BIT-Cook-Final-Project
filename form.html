@@ -32,7 +32,35 @@
             </ul>
         </nav>
     </header>
+    
+    <main class="main">
+
+        <h1 class="main__title">Send us your recipe!</h1>
+        <p class="main__description">They say everything looks better with odd numbers of things. But sometimes I put
+            even numbers--just to upset the critics. Exercising the imagination, experimenting with talents, being
+            creative; these things, to me, are truly the windows to your soul. 
+        </p>
+
+        <form class="main__form" action="#" method="POST">
         
+                <label class="main__form__label" for="name">Recipe name</label><br>
+                <input class="main__form__input" type="text" id="name" name="name" pattern="[A-Za-z]+" title="Only letters allowed" required>
+                <br>
+        
+                <label class="main__form__label" for="last-name">Preparation name</label><br>
+                <input class="main__form__input" type="text" id="last-name" name="last-name" pattern="[A-Za-z]+" title="Only letters allowed" required>
+                <br>
+        
+                <label class="main__form__label" for="mensaje">Ingredients</label><br>
+                <textarea class="main__form__textarea" id="mensaje" name="mensaje" required></textarea>
+                <br>
+        
+                <label class="main__form__label" for="comentarios">Instructions</label><br>
+                <textarea class="main__form__textarea" id="comentarios" name="comentarios" required></textarea>
+                <br>
+        
+            <button class="main__form__submit" type="submit">Send</button>
+        </form>    
     </main>
 
     <footer class="footer">
