@@ -3,7 +3,7 @@
 :root {
   --green: #255538;
   --light-brown: #7e4333;
-  --grey: #DFDFDF;
+  --grey: #dfdfdf;
 
   --first-font: "DM Serif Display", serif;
   --secundary-font: "DM Sans", sans-serif;
@@ -25,7 +25,7 @@ html {
 /* Form Description */
 
 .main {
-  margin: 2.3rem .5rem;
+  margin: 2.3rem 0.6rem;
   background-color: white;
   padding: 1rem;
   border-radius: 6px;
@@ -60,9 +60,9 @@ html {
   border-radius: 6px;
   border-style: none;
   background-color: var(--grey);
-  margin: .9rem 0;
+  margin: 0.9rem 0;
   font-family: var(--secundary-font);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .main__form__textarea {
@@ -71,7 +71,7 @@ html {
 }
 
 .main__form__submit {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   width: 100%;
   background-color: var(--green);
   border-radius: 6px;
@@ -81,5 +81,29 @@ html {
   cursor: pointer;
 }
 
+.main__form__submit:hover {
+  background-color: #277646;
+}
 
+.main__form__reset {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: #96271b;
+  border-radius: 6px;
+  height: 2.5rem;
+  font-family: var(--secundary-font);
+  color: white;
+  cursor: pointer;
+}
 
+.main__form__reset:hover {
+  background-color: #ce2815;
+}
+
+@media (min-width: 768px) {
+  .botton-container {
+    display: flex;
+    column-gap: 4vw;
+    font-size: 2.8vw;
+  }
+}

@@ -46,7 +46,7 @@ html {
 /* Recipe Section */
 
 .main__recipe, .main__ingredients, .main__more-recipes {
-  margin: 2.3rem 1rem;
+  margin: 2.3rem .8rem;
   background-color: white;
   padding: 1rem;
   border-radius: 6px;
@@ -168,7 +168,7 @@ html {
   .main__recipe,
   .main__ingredients,
   .main__more-recipes {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
   }
 
   .main__more-recipes__image {
