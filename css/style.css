@@ -45,17 +45,17 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 10.5px 20px;
+    padding: .8rem 20px;
     list-style: none;
 }
 
 .header__navbar__item--left {
     margin-right: auto;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .header__navbar__item--right {
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: var(--secundary-font);
 }
 
@@ -110,10 +110,15 @@ body {
 
 @media (min-width: 768px) {
     .footer__item:last-child {
-        font-size: clamp(.58rem, 2.67vw, 2vw);
+        font-size: 1rem;
     }
 
     .footer__item--title {
-        font-size: clamp(1.2rem, 4.3vw, 2.9vw);
+        font-size: 1.4rem;
     }
+}
+
+/* Desktop Mode */
+
+@media (min-width: 1024px) {
 }

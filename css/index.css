@@ -56,6 +56,10 @@ a {
   padding: 0 15px;
 }
 
+.main__background__info__title--desktop {
+  display: none;
+}
+
 /* Main-section */
 
 .main__recipes {
@@ -74,6 +78,12 @@ a {
   padding: 1rem;
   background-color: white;
   margin-bottom: 2rem;
+}
+
+.main__recipes__article:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.495);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.486);
 }
 
 .main__recipes__article__image {
@@ -120,4 +130,60 @@ a {
   .main__recipes__article__list__item {
     font-size: clamp(0.9rem, 2.2vw, 2.2vw);
   }
+}
+
+/* Desktop Mode */
+
+@media (min-width: 1024px) {
+    .main {
+      margin: 1.6rem auto;
+      max-width: 86vw;
+    }
+
+    .main__background {
+      height: clamp(18.4rem, 20.2vw, 35rem);
+      background-size: cover;
+    }
+
+    .main__background__info {
+      justify-content: flex-start;
+      padding-left: 1rem;
+    }
+
+    .main__background__info__title {
+      text-align: start;
+      font-size: clamp(2.5rem, 4vw, 4.5rem);
+    }
+
+    .main__background__info__title--desktop {
+      display: inline;
+      font-size: clamp(1.8rem, 3vw, 4rem);
+    }
+
+    .main__recipes-title {
+      font-size: clamp(1.6rem, 3vw, 3rem)
+    }
+
+    .main__recipes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main__recipes__article {
+      padding: 1.1vw;
+    }
+
+    .main__recipes__article__title {
+      font-size: clamp(1.8rem, 2vw, 4vw);
+
+    }
+
+    .main__recipes__article__list {
+      padding: 0 1.8vw;
+    }
+
+    .main__recipes__article__list__item {
+      font-size: clamp(0.9rem, 1.3vw, 2.2vw);
+    }
+
 }
