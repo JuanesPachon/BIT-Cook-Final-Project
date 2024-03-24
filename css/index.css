@@ -7,86 +7,116 @@
 }
 
 html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 /* Background Title ==========================================*/
 
 .main {
-    margin: 2rem .625rem;
+  margin: 2rem 0.625rem;
 }
 
 .main__background {
-    height: 18.4rem;
-    background-image: url(../assets/img/simple_omelette.webp);
-    position: relative;
-    background-position: 5% 55%;
-    background-size: 65rem;
-    border-radius: 8px;
+  height: 18.4rem;
+  background-image: url(../assets/img/simple_omelette.webp);
+  position: relative;
+  background-position: 5% 55%;
+  background-size: 65rem;
+  border-radius: 8px;
 }
 
 .main__background__info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.493);
-    height: 100%;
-    border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.493);
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .main__background__info__title {
-    font-size: 2.8rem;
-    text-align: center;
-    color: white;
-    padding: 0 15px;
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+  padding: 0 15px;
 }
-
 
 /* Main-section */
 
+.main__recipes {
+    margin-bottom: -1.5rem;
+}
+
 .main__recipes-title {
-    font-size: clamp(1.6rem, 6.06vw, 6.06vw);
-    text-align: center;
-    margin: 2rem 0;
+  font-size: clamp(1.6rem, 6.06vw, 6.06vw);
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .main__recipes__article {
-    border: solid 3px black;
-    border-radius: 6px;
-    padding: 1rem;
-    background-color: white;
-    margin-bottom: 2rem;
+  border: solid 3px black;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 2rem;
 }
 
 .main__recipes__article__image {
-    width: 100%;
-    border-radius: 6px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .main__recipes__article__title {
-    font-size: clamp(1.8rem, 6.43vw, 6.43vw);
-    color: var(--light-brown);
-    font-family: var(--first-font);
-    margin: 1.5rem 0;
+  font-size: clamp(1.8rem, 6.43vw, 6.43vw);
+  color: var(--light-brown);
+  font-family: var(--first-font);
+  margin: 1.5rem 0;
 }
 
 .main__recipes__article__list {
-    padding: 0 20px;
+  padding: 0 30px;
 }
 
 .main__recipes__article__list__item {
-    padding: 0;
-    font-size: clamp(.9rem, 3.036vw, 3.036vw);
-    font-family: var(--secundary-font);
+  padding: 0;
+  font-size: clamp(0.9rem, 3.036vw, 3.036vw);
+  font-family: var(--secundary-font);
+}
+
+/* Tablet Mode */
+
+@media (min-width: 768px) {
+
+  .main__background__info__title {
+    font-size: clamp(2.8rem, 7.27vw, 7.27vw);
+  }
+
+  .main__recipes {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 1.5rem;
+  }
+
+  .main__recipes__article__title {
+    font-size: clamp(1.6rem, 4.5vw, 4.5vw);
+    margin: 1.2rem 0;
+  }
+
+  .main__recipes__article__list__item {
+    font-size: clamp(0.9rem, 2.2vw, 2.2vw);
+  }
 }

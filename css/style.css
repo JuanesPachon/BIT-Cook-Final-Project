@@ -88,11 +88,11 @@ body {
     margin: 0;
     color: white;
     font-family: var(--secundary-font);
-    font-size: clamp(.58rem, 2.67vw, 2.67vw);
+    font-size: clamp(.58rem, 2.67vw, 2.4vw);
 }
 
 .footer__item--title {
-    font-size: clamp(1.2rem, 4.3vw, 4.3vw);
+    font-size: clamp(1.2rem, 4.3vw, 4vw);
     font-family: var(--first-font);
     text-decoration: none;
 }
@@ -100,4 +100,16 @@ body {
 .footer__item:last-child {
     padding-left: 2.2rem;
     text-align: end;
+}
+
+/* Tablet Mode */
+
+@media (min-width: 768px) {
+    .footer__item:last-child {
+        font-size: clamp(.58rem, 2.67vw, 2vw);
+    }
+
+    .footer__item--title {
+        font-size: clamp(1.2rem, 4.3vw, 2.9vw);
+    }
 }
