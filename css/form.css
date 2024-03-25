@@ -32,14 +32,14 @@ html {
 }
 
 .main__title {
-  font-size: clamp(2rem, 7.08vw, 7.08vw);
+  font-size: clamp(2rem, 7.08vw, 2.2rem);
   margin: 0;
   color: var(--light-brown);
 }
 
 .main__description {
   font-family: var(--secundary-font);
-  font-size: clamp(0.8rem, 2.85vw, 2.85vw);
+  font-size: clamp(0.8rem, 2.85vw, 1rem);
 }
 
 /*  Form */
@@ -49,7 +49,7 @@ html {
 }
 
 .main__form__label {
-  font-size: clamp(1.2rem, 4.25vw, 4.25vw);
+  font-size: clamp(1.2rem, 4.25vw, 1.4rem);
   color: var(--light-brown);
 }
 
@@ -105,5 +105,28 @@ html {
     display: flex;
     column-gap: 4vw;
     font-size: 2.8vw;
+  }
+}
+
+/* Desktop Mode */
+
+@media (min-width: 1024px) {
+  .main {
+    margin: 2.5rem auto;
+    width: 60vw;
+    max-width: 100rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  
+  .botton-container {
+    column-gap: 1rem;
+  }
+  
+  .main__form__submit, .main__form__reset {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0;
   }
 }
