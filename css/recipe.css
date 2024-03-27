@@ -152,6 +152,7 @@ html {
   width: 4rem;
   height: 3.5rem;
   margin: 0.3rem 0;
+  border-radius: 5px;
 }
 
 .main__aside__more-recipes__recipe__info {
@@ -163,12 +164,13 @@ html {
 }
 
 .main__aside__more-recipes__recipe__info__title {
-  font-size: clamp(1rem, 3.68vw, 3.68vw);
+  font-size: clamp(.8rem, 3.68vw, 3.68vw);
   margin: 0;
 }
 
 .main__aside__more-recipes__recipe__info__description {
   margin: 0;
+  font-size: .5em;
 }
 
 /* Tablet Mode */
@@ -183,12 +185,21 @@ html {
   .main__aside__more-recipes__image {
     width: 6rem;
     height: 5rem;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
   }
 
   .main__aside__more-recipes__recipe__info {
     padding-left: 2rem;
   }
+
+  .main__aside__more-recipes__recipe__info__title {
+    font-size: clamp(1.1rem, 3.68vw, 3.68vw);
+  }
+
+  .main__aside__more-recipes__recipe__info__description {
+    font-size: .9em;
+  }
+  
 }
 
 /* Desktop Mode */
@@ -242,8 +253,7 @@ html {
   .main__recipe__description,
   .main__recipe__details__list__item,
   .main__recipe__instructions__list__item,
-  .main__aside__ingredients__nutrition__info__text,
-  .main__aside__more-recipes__recipe__info__description {
+  .main__aside__ingredients__nutrition__info__text {
     font-size: 1em;
   }
 
@@ -273,11 +283,11 @@ html {
   }
 
   .main__aside__more-recipes__recipe__info__title {
-    font-size: 1em;
+    font-size: .95em;
   }
 
   .main__aside__more-recipes__recipe__info__description {
-    font-size: 1em;
+    font-size: .75em;
   }
 
   .main__aside__more-recipes__image {

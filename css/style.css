@@ -47,6 +47,7 @@ body {
     margin: 0;
     padding: .8rem 20px;
     list-style: none;
+    column-gap: 1rem;
 }
 
 .header__navbar__item--left {
@@ -55,7 +56,8 @@ body {
 }
 
 .header__navbar__item--right {
-    font-size: 1rem;
+    text-align: center;
+    font-size: clamp(.65rem, 4.5vw, 1rem);
     font-family: var(--secundary-font);
 }
 
@@ -65,7 +67,6 @@ body {
 }
 
 .header__navbar__item--right img {
-    margin-left: 1.8rem;
     margin-bottom: -4px;
     height: 1.7rem;
 }
