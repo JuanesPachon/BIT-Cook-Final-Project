@@ -10,11 +10,13 @@
 
 /* DARK MODE =============================================================*/
 
-.dark-mode body {
-    background-color: black;
+#light-mode-icon {
+    display: none;
 }
 
-
+body.dark-mode {
+    background-color: rgb(21, 21, 21);
+}
 
 /* Globales ===========================================================*/
 
@@ -69,6 +71,7 @@ body {
 .header__navbar__item--right img {
     margin-bottom: -4px;
     height: 1.7rem;
+    cursor: pointer;
 }
 
 /* footer ==============================================================*/

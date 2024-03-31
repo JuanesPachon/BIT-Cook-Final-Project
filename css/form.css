@@ -11,6 +11,10 @@
 
 /* Globales */
 
+body {
+  transition: color 0.3s ease-out;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +24,30 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+/* Dark Mode */
+
+#light-mode-icon {
+  display: none;
+}
+
+body.dark-mode {
+  color: white;
+}
+
+body.dark-mode main {
+  background-color: #2F2F2F;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #4E4D4E;
+}
+
+body.dark-mode h1,
+body.dark-mode label {
+  color: white;
 }
 
 /* Form Description */

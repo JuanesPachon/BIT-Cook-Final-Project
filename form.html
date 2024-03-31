@@ -25,51 +25,60 @@
         <nav class="header__navbar">
             <ul class="header__navbar-list">
                 <li class="header__navbar__item header__navbar__item--left"><a href="index.html">BITCook</a></li>
-                <li class="header__navbar__item header__navbar__item--right"><a href="form.html">Send your recipe</a></li>
+                <li class="header__navbar__item header__navbar__item--right"><a href="form.html">Send your recipe</a>
+                </li>
                 <li class="header__navbar__item header__navbar__item--right">
-                    <img src="assets/img/dark-mode-icon.png" alt="Dark Mode Icon" />
+                    <img id="dark-mode-icon" src="assets/img/dark-mode-icon.png" alt="Dark Mode Icon" onclick="enableDarkMode()"/>
+                    <img id="light-mode-icon" src="assets/img/light-mode-icon.png" alt="Light Mode Icon" onclick="enableLightMode()"/>
                 </li>
             </ul>
         </nav>
     </header>
-    
+
     <main class="main">
 
         <h1 class="main__title">Send us your recipe!</h1>
-        <p class="main__description">They say everything looks better with odd numbers of things. But sometimes I put
-            even numbers--just to upset the critics. Exercising the imagination, experimenting with talents, being
-            creative; these things, to me, are truly the windows to your soul. 
+        <p class="main__description">Share your culinary masterpiece with the world! Whether it's a family recipe
+            passed down through generations or a creative twist on a classic dish, your unique creation deserves to be
+            showcased. Let your taste buds guide you as you craft your signature recipe and inspire others to embark on
+            their own culinary adventures.
         </p>
 
         <form class="main__form" action="#" method="POST">
-        
+
             <label class="main__form__label" for="name">Recipe name</label><br>
-            <input class="main__form__input" type="text" id="name" name="name" pattern="[A-Za-z]+" title="Only letters allowed" required>
+            <input class="main__form__input" type="text" id="name" name="name" pattern="[A-Za-z]+"
+                title="Only letters allowed" required>
             <br>
-        
+
             <label class="main__form__label" for="last-name">Preparation name</label><br>
-            <input class="main__form__input" type="text" id="last-name" name="last-name" pattern="[A-Za-z]+" title="Only letters allowed" required>
+            <input class="main__form__input" type="text" id="last-name" name="last-name" pattern="[A-Za-z]+"
+                title="Only letters allowed" required>
             <br>
-        
+
             <label class="main__form__label" for="ingredients">Ingredients</label><br>
             <textarea class="main__form__textarea" id="ingredients" name="ingredients" required></textarea>
             <br>
-        
+
             <label class="main__form__label" for="instructions">Instructions</label><br>
             <textarea class="main__form__textarea" id="instructions" name="instructions" required></textarea>
             <br>
-        
+
             <div class="botton-container">
                 <button class="main__form__submit" type="submit">Send</button>
                 <button class="main__form__reset" type="reset">Reset</button>
             </div>
-        </form>    
+        </form>
     </main>
 
     <footer class="footer">
-        <a class="footer__item footer__item--title" href="index.html"><p>Bitcook</p></a>
+        <a class="footer__item footer__item--title" href="index.html">
+            <p>Bitcook</p>
+        </a>
         <p class="footer__item">© 2024 Bogotá Institute of Technology.</p>
     </footer>
+
+    <script src="js/dark-mode.js"></script>
 
 </body>
 
