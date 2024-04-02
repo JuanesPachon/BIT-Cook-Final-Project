@@ -3,27 +3,30 @@ const darkBotton = document.getElementById("dark-mode-icon");
 const lightBotton = document.getElementById("light-mode-icon");
 const body = document.querySelector("body");
 
-document.addEventListener('DOMContentLoaded', () => {
-  const darkModeEnabled = localStorage.getItem('darkModeEnabled');
+document.addEventListener('DOMContentLoaded', () => {    // event that will act just when the html loads without waiting the CSS
+  const darkModeEnabled = localStorage.getItem('darkModeEnabled');   // localstorage saves things in "cache" 
   if (darkModeEnabled) {
-      enableDarkMode(); 
+    toggleDarkMode(); 
   }
 });
 
-function enableDarkMode() {
+function toggleDarkMode() {
 
-  body.classList.add("dark-mode");
-  darkBotton.style.display = "none";
-  lightBotton.style.display = "inline";
-  localStorage.setItem('darkModeEnabled', true);
-
+  body.classList.toggle("dark-mode");
+  toggleAction();
 }
 
-function enableLightMode() {
+function toggleAction() {
 
-    body.classList.remove("dark-mode");
+  const isDarkMode = body.classList.contains("dark-mode")
+
+  if (isDarkMode) {
+    darkBotton.style.display = "none";
+    lightBotton.style.display = "inline";
+    localStorage.setItem('darkModeEnabled', true);
+  } else {
     lightBotton.style.display = "none";
     darkBotton.style.display = "inline";
     localStorage.removeItem('darkModeEnabled');
-
+  }
 }
