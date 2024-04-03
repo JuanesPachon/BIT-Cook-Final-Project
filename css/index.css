@@ -2,6 +2,7 @@
 
 :root {
   --light-brown: #7e4333;
+  --green: #255538;
   --first-font: "DM Serif Display", serif;
   --secundary-font: "DM Sans", sans-serif;
 }
@@ -89,10 +90,15 @@ body.dark-mode .main__recipes__article {
 
 
 .main__recipes-title,
-.main__location__title {
+.main__location__title,
+.main__opinions__title {
   font-size: clamp(1.6rem, 6.06vw, 6.06vw);
   text-align: center;
   margin: 2rem 0;
+}
+
+.main__recipes__article__title__Desktop {
+  display: none;
 }
 
 .main__recipes__article {
@@ -135,6 +141,75 @@ body.dark-mode .main__recipes__article {
   font-family: var(--secundary-font);
 }
 
+/* Divisor */
+
+.first-divisor {
+  width: 100%;
+  background-color: #255538;
+  height: clamp(2rem, 2vw, 10rem);
+  position: absolute;
+  left: 0;
+  border: 3px solid black;
+}
+
+/* Opinions */
+
+.main__opinions__opinion {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1.5rem 1.5rem;
+  border: 3px solid black;
+  margin-bottom: 2rem;
+}
+
+.main__opinions__title,
+.main__location__title {
+  margin-top: 6rem;
+}
+
+.main__opinions__opinion__user-info {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.main__opinions__opinion__user-info__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.main__opinions__opinion__user-info__username {
+  font-size: 1.3rem;
+  margin: 0;
+  align-self: center;
+}
+
+.main__opinions__opinion__comment {
+  margin: 35px 0;
+  font-family: var(--secundary-font);
+  font-size: clamp(.96rem, 1.6vw, 1.6rem);
+  height: 180px;
+}
+
+.main__opinions__opinion__valoration {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  margin-bottom: .6rem;
+}
+
+.main__opinions__opinion__valoration__number {
+  margin: 0;
+  font-size: 28px;
+  font-family: var(--secundary-font);
+}
+
+.main__opinions__tablet-opinion, hr {
+  display: none;
+}
+
 /* Location */
 
 .main__location__map {
@@ -172,6 +247,48 @@ body.dark-mode .main__recipes__article {
     font-size: clamp(0.9rem, 2.2vw, 2.2vw);
   }
 
+  .main__opinions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .main__opinions__title,
+  .main__location__title {
+    margin-top: 4.5rem;
+  }
+
+  .main__opinions__opinion__comment {
+    font-size: .95rem;
+  }
+
+  .main__opinions__tablet-opinion {
+    display: block;
+    background-color:var(--green);
+    border-radius: 20px;
+    padding: 1.5rem 1.5rem;
+    border: 5px solid black;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    justify-content: space-around;
+  }
+
+  .main__opinions__tablet-opinion__text {
+    font-size: clamp(1.5rem, 6vw, 6vw);
+    text-align: center;
+    color: white;
+    margin: 20px;
+  }
+
+  hr {
+    display: inline;
+    width: 100%;
+    height: 2px;
+  }
+
   .main__location {
     padding: 0 2rem;
   }
@@ -179,6 +296,7 @@ body.dark-mode .main__recipes__article {
   .main__location__map {
     height: 20rem;
   }
+
 }
 
 /* Desktop Mode */
@@ -212,7 +330,8 @@ body.dark-mode .main__recipes__article {
     }
 
     .main__recipes-title,
-    .main__location__title {
+    .main__location__title,
+    .main__opinions__title {
       font-size: clamp(1.6rem, 3vw, 3rem)
     }
 
@@ -231,12 +350,45 @@ body.dark-mode .main__recipes__article {
       margin: .5rem 0;
     }
 
+    #hide {
+      display: none;
+    }
+
+    .main__recipes__article__title__Desktop {
+      display: block;
+    }
+
     .main__recipes__article__list {
       margin: 1rem 0;
     }
 
     .main__recipes__article__list__item {
       font-size: clamp(0.9rem, .8vw, 1.8rem);
+    }
+
+    .main__location__title {
+      margin-top: 6.5rem;
+    }
+
+    .main__opinions {
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+    
+    .main__opinions__opinion {
+      width: 30%;
+      padding: 1.5rem 2rem;
+    }
+
+    .main__opinions__opinion__comment {
+      font-size: clamp(.75rem , 1.2vw, 1rem);
+      height: 185px;
+    }
+
+    .main__opinions__tablet-opinion, hr {
+      display: none;
     }
 
     .main__location {
