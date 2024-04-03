@@ -87,11 +87,9 @@ body.dark-mode .main__recipes__article {
 
 /* Main-section */
 
-.main__recipes {
-    margin-bottom: -1.5rem;
-}
 
-.main__recipes-title {
+.main__recipes-title,
+.main__location__title {
   font-size: clamp(1.6rem, 6.06vw, 6.06vw);
   text-align: center;
   margin: 2rem 0;
@@ -106,7 +104,8 @@ body.dark-mode .main__recipes__article {
   transition: box-shadow .2s ease-in-out;
 }
 
-.main__recipes__article:hover {
+.main__recipes__article:hover,
+.main__location__map:hover {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.495);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.57);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.486);
@@ -136,6 +135,16 @@ body.dark-mode .main__recipes__article {
   font-family: var(--secundary-font);
 }
 
+/* Location */
+
+.main__location__map {
+  width: 100%;
+  height: 15rem;
+  border: solid 5px black;
+  border-radius: 8px;
+  transition: box-shadow .2s ease-in-out;
+}
+
 /* Tablet Mode */
 
 @media (min-width: 768px) {
@@ -161,6 +170,14 @@ body.dark-mode .main__recipes__article {
 
   .main__recipes__article__list__item {
     font-size: clamp(0.9rem, 2.2vw, 2.2vw);
+  }
+
+  .main__location {
+    padding: 0 2rem;
+  }
+
+  .main__location__map {
+    height: 20rem;
   }
 }
 
@@ -194,7 +211,8 @@ body.dark-mode .main__recipes__article {
       font-size: clamp(1.8rem, 3vw, 4rem);
     }
 
-    .main__recipes-title {
+    .main__recipes-title,
+    .main__location__title {
       font-size: clamp(1.6rem, 3vw, 3rem)
     }
 
@@ -219,6 +237,14 @@ body.dark-mode .main__recipes__article {
 
     .main__recipes__article__list__item {
       font-size: clamp(0.9rem, .8vw, 1.8rem);
+    }
+
+    .main__location {
+      padding: 0 7rem;
+    }
+
+    .main__location__map {
+      height: 25rem;
     }
 
 }
