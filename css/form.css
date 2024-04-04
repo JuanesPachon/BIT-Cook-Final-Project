@@ -10,7 +10,7 @@
   --secundary-font: "DM Sans", sans-serif;
 }
 
-/* Globales */
+/* Globals ================================================================================================*/
 
 body {
   transition: color 0.3s ease-out;
@@ -27,7 +27,7 @@ html {
   box-sizing: inherit;
 }
 
-/* Dark Mode */
+/* Dark Mode ==============================================================================================*/
 
 #light-mode-icon {
   display: none;
@@ -51,7 +51,7 @@ body.dark-mode label {
   color: white;
 }
 
-/* Form Description */
+/* Form Description =======================================================================================*/
 
 .main {
   margin: 2.3rem 0.6rem;
@@ -71,7 +71,7 @@ body.dark-mode label {
   font-size: clamp(0.8rem, 2.85vw, 1rem);
 }
 
-/*  Form */
+/*  Form ==================================================================================================*/
 
 .main__form {
   margin-top: 1.2rem;
@@ -129,7 +129,7 @@ body.dark-mode label {
   background-color: #ce2815;
 }
 
-/* ScrollBar */
+/* ScrollBar ==============================================================================================*/
 
 ::-webkit-scrollbar {
   background-color: #deccba;
@@ -142,7 +142,7 @@ body.dark-mode label {
   border-radius: 100px;
 }
 
-/* ScrollBar Firefox */
+/* ScrollBar Firefox ======================================================================================*/
 
 scrollbar {
   background-color: #deccba;
@@ -155,7 +155,9 @@ scrollbar thumb {
   border-radius: 100px;
 }
 
+/* ======================================================================================================= */
 /* Tablet Mode */
+/* ======================================================================================================= */
 
 @media (min-width: 768px) {
   .botton-container {
@@ -165,9 +167,12 @@ scrollbar thumb {
   }
 }
 
+/* ======================================================================================================= */
 /* Desktop Mode */
+/* ======================================================================================================= */
 
 @media (min-width: 1024px) {
+
   .main {
     margin: 2.5rem auto;
     width: 60vw;
