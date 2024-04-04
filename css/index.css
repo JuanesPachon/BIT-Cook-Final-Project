@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 
 :root {
+  --bg-color: #f3e5d8;
   --light-brown: #7e4333;
   --green: #255538;
   --first-font: "DM Serif Display", serif;
@@ -48,10 +49,8 @@ body.dark-mode .main__opinions__opinion:hover {
 
 body.dark-mode .main__recipes__article,
 body.dark-mode .main__opinions__opinion {
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
 }
-
-
 
 /* Background Title ==========================================*/
 
@@ -93,7 +92,6 @@ body.dark-mode .main__opinions__opinion {
 
 /* Main-section */
 
-
 .main__recipes-title,
 .main__location__title,
 .main__opinions__title {
@@ -112,7 +110,7 @@ body.dark-mode .main__opinions__opinion {
   padding: 1rem;
   background-color: white;
   margin-bottom: 2rem;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .main__recipes__article:hover,
@@ -193,7 +191,7 @@ body.dark-mode .main__opinions__opinion {
 .main__opinions__opinion__comment {
   margin: 30px 0;
   font-family: var(--secundary-font);
-  font-size: clamp(.96rem, 1.6vw, 1.6rem);
+  font-size: clamp(0.96rem, 1.6vw, 1.6rem);
   height: auto;
 }
 
@@ -202,7 +200,7 @@ body.dark-mode .main__opinions__opinion {
   justify-content: center;
   width: 100%;
   height: 30px;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 .main__opinions__opinion__valoration__number {
@@ -211,7 +209,8 @@ body.dark-mode .main__opinions__opinion {
   font-family: var(--secundary-font);
 }
 
-.main__opinions__tablet-opinion, hr {
+.main__opinions__tablet-opinion,
+hr {
   display: none;
 }
 
@@ -222,13 +221,38 @@ body.dark-mode .main__opinions__opinion {
   height: 15rem;
   border: solid 5px black;
   border-radius: 8px;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  background-color: #deccba;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 100px;
+}
+
+/* ScrollBar Firefox */
+
+scrollbar {
+  background-color: #deccba;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+scrollbar thumb {
+  background-color: var(--green);
+  border-radius: 100px;
 }
 
 /* Tablet Mode */
 
 @media (min-width: 768px) {
-
   .main__background__info__title {
     font-size: clamp(2.8rem, 7.27vw, 7.27vw);
   }
@@ -264,12 +288,12 @@ body.dark-mode .main__opinions__opinion {
   }
 
   .main__opinions__opinion__comment {
-    font-size: .95rem;
+    font-size: 0.95rem;
   }
 
   .main__opinions__tablet-opinion {
     display: block;
-    background-color:var(--green);
+    background-color: var(--green);
     border-radius: 20px;
     padding: 1.5rem 1.5rem;
     border: 5px solid black;
@@ -301,108 +325,107 @@ body.dark-mode .main__opinions__opinion {
   .main__location__map {
     height: 20rem;
   }
-
 }
 
 /* Desktop Mode */
 
 @media (min-width: 1024px) {
-    .main {
-      margin: 1.6rem auto;
-      min-width: 30rem;
-      width: 85vw;
-      max-width: 65rem;
-    }
+  .main {
+    margin: 1.6rem auto;
+    min-width: 30rem;
+    width: 85vw;
+    max-width: 65rem;
+  }
 
-    .main__background {
-      height: clamp(18.4rem, 20.2vw, 35rem);
-      background-size: cover;
-    }
+  .main__background {
+    height: clamp(18.4rem, 20.2vw, 35rem);
+    background-size: cover;
+  }
 
-    .main__background__info {
-      justify-content: flex-start;
-      padding-left: 1rem;
-    }
+  .main__background__info {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
 
-    .main__background__info__title {
-      text-align: start;
-      font-size: clamp(2.5rem, 4vw, 4.5rem);
-    }
+  .main__background__info__title {
+    text-align: start;
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+  }
 
-    .main__background__info__title--desktop {
-      display: inline;
-      font-size: clamp(1.8rem, 3vw, 4rem);
-    }
+  .main__background__info__title--desktop {
+    display: inline;
+    font-size: clamp(1.8rem, 3vw, 4rem);
+  }
 
-    .main__recipes-title,
-    .main__location__title,
-    .main__opinions__title {
-      font-size: clamp(1.6rem, 3vw, 3rem)
-    }
+  .main__recipes-title,
+  .main__location__title,
+  .main__opinions__title {
+    font-size: clamp(1.6rem, 3vw, 3rem);
+  }
 
-    .main__recipes {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .main__recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .main__recipes__article {
-      padding: 1rem;
-      height: 21rem;
-    }
+  .main__recipes__article {
+    padding: 1rem;
+    height: 21rem;
+  }
 
-    .main__recipes__article__title {
-      font-size: clamp(1.2rem, 1.8vw, 2.5rem);
-      margin: .5rem 0;
-    }
+  .main__recipes__article__title {
+    font-size: clamp(1.2rem, 1.8vw, 2.5rem);
+    margin: 0.5rem 0;
+  }
 
-    #hide {
-      display: none;
-    }
+  #hide {
+    display: none;
+  }
 
-    .main__recipes__article__title__Desktop {
-      display: block;
-    }
+  .main__recipes__article__title__Desktop {
+    display: block;
+  }
 
-    .main__recipes__article__list {
-      margin: 1rem 0;
-    }
+  .main__recipes__article__list {
+    margin: 1rem 0;
+  }
 
-    .main__recipes__article__list__item {
-      font-size: clamp(0.9rem, .8vw, 1.8rem);
-    }
+  .main__recipes__article__list__item {
+    font-size: clamp(0.9rem, 0.8vw, 1.8rem);
+  }
 
-    .main__location__title {
-      margin-top: 6.5rem;
-    }
+  .main__location__title {
+    margin-top: 6.5rem;
+  }
 
-    .main__opinions {
-      display: flex;
-      justify-content: space-around;
-      margin: 0;
-      margin-bottom: 2rem;
-    }
-    
-    .main__opinions__opinion {
-      width: 30%;
-      padding: 1.5rem 2rem;
-    }
+  .main__opinions {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
 
-    .main__opinions__opinion__comment {
-      font-size: clamp(.75rem , 1.2vw, 1rem);
-      height: 185px;
-      margin: 30px 0;
-    }
+  .main__opinions__opinion {
+    width: 30%;
+    padding: 1.5rem 2rem;
+  }
 
-    .main__opinions__tablet-opinion, hr {
-      display: none;
-    }
+  .main__opinions__opinion__comment {
+    font-size: clamp(0.75rem, 1.2vw, 1rem);
+    height: 185px;
+    margin: 30px 0;
+  }
 
-    .main__location {
-      padding: 0 7rem;
-    }
+  .main__opinions__tablet-opinion,
+  hr {
+    display: none;
+  }
 
-    .main__location__map {
-      height: 25rem;
-    }
+  .main__location {
+    padding: 0 7rem;
+  }
 
+  .main__location__map {
+    height: 25rem;
+  }
 }

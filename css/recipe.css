@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 
 :root {
+  --bg-color: #f3e5d8;
+  --green: #255538;
   --light-brown: #7e4333;
   --first-font: "DM Serif Display", serif;
   --secundary-font: "DM Sans", sans-serif;
@@ -66,11 +68,11 @@ body.dark-mode .main__aside__more-recipes__recipe__info__description {
 body.dark-mode .main__recipe,
 body.dark-mode .main__aside__ingredients,
 body.dark-mode .main__aside__more-recipes {
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
 }
 
 body.dark-mode .main__recipe__details {
-  background-color: #4E4D4E;
+  background-color: #4e4d4e;
 }
 
 body.dark-mode .main__aside__ingredients__nutrition__info__text {
@@ -198,13 +200,39 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
 }
 
 .main__aside__more-recipes__recipe__info__title {
-  font-size: clamp(.7rem, 3.68vw, 1rem);
+  font-size: clamp(0.7rem, 3.68vw, 1rem);
   margin: 0;
 }
 
 .main__aside__more-recipes__recipe__info__description {
   margin: 0;
-  font-size: .5rem;
+  font-size: 0.6rem;
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  background-color: #deccba;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 100px;
+}
+
+/* ScrollBar Firefox */
+
+scrollbar {
+  background-color: #deccba;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+scrollbar thumb {
+  background-color: var(--green);
+  border-radius: 100px;
 }
 
 /* Tablet Mode */
@@ -233,14 +261,13 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
   .main__aside__more-recipes__recipe__info__description {
     font-size: 1em;
   }
-  
 }
 
 /* Desktop Mode */
 
 @media (min-width: 1024px) {
   .main {
-    margin: .5rem auto;
+    margin: 0.5rem auto;
     width: 82vw;
     max-width: 100rem;
     height: auto;
@@ -260,9 +287,9 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
 
   .main__recipe__title {
     font-size: 2em;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
-  
+
   .main__recipe__image {
     height: 18rem;
   }
@@ -271,7 +298,7 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
   .main__aside__more-recipes__recipe__info__title {
     font-size: 1.3em;
   }
-  
+
   .main__recipe__instructions__title,
   .main__aside__ingredients__title,
   .main__aside__ingredients__nutrition-title,
@@ -283,7 +310,7 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
   .main__aside__more-recipes__title {
     margin-bottom: 1rem;
   }
-  
+
   .main__recipe__description,
   .main__recipe__details__list__item,
   .main__recipe__instructions__list__item,
@@ -292,11 +319,11 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
   }
 
   .main__aside__ingredients {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .main__aside__ingredients__list__item {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   .main__aside__more-recipes__recipe__info {
@@ -321,12 +348,11 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
   }
 
   .main__aside__more-recipes__recipe__info__description {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .main__aside__more-recipes__image {
     width: 5rem;
     height: 4rem;
   }
-
 }
