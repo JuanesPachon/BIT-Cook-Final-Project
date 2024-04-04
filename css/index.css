@@ -38,15 +38,20 @@ body.dark-mode .main__recipes__article__list {
   color: white;
 }
 
-body.dark-mode .main__recipes__article:hover {
+body.dark-mode .main__recipes__article:hover,
+body.dark-mode .main__location__map:hover,
+body.dark-mode .main__opinions__opinion:hover {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.495);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.57);
   box-shadow: 0px 0px 15px 0px rgba(242, 238, 238, 0.516);
 }
 
-body.dark-mode .main__recipes__article {
+body.dark-mode .main__recipes__article,
+body.dark-mode .main__opinions__opinion {
   background-color: #2F2F2F;
 }
+
+
 
 /* Background Title ==========================================*/
 
@@ -186,10 +191,10 @@ body.dark-mode .main__recipes__article {
 }
 
 .main__opinions__opinion__comment {
-  margin: 35px 0;
+  margin: 30px 0;
   font-family: var(--secundary-font);
   font-size: clamp(.96rem, 1.6vw, 1.6rem);
-  height: 180px;
+  height: auto;
 }
 
 .main__opinions__opinion__valoration {
@@ -385,6 +390,7 @@ body.dark-mode .main__recipes__article {
     .main__opinions__opinion__comment {
       font-size: clamp(.75rem , 1.2vw, 1rem);
       height: 185px;
+      margin: 30px 0;
     }
 
     .main__opinions__tablet-opinion, hr {
