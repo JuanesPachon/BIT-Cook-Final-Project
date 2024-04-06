@@ -79,6 +79,19 @@ body.dark-mode .main__aside__ingredients__nutrition__info__text {
   border-bottom: solid white 1.5px;
 }
 
+body.dark-mode::-webkit-scrollbar, 
+body.dark-mode scrollbar {
+  background-color: #2f2f2f;
+  border: #deccba 2px;
+  border-bottom: none;
+  border-top: none;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb, 
+body.dark-mode scrollbar thumb {
+  background-color: #2e7d4f;
+}
+
 /* Recipe Section =========================================================================================*/
 
 .main__recipe,

@@ -32,6 +32,10 @@ a {
 
 /* Dark Mode ==============================================================================================*/
 
+document.dark-mode {
+  background-color: black;
+}
+
 body.dark-mode,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -50,6 +54,19 @@ body.dark-mode .main__opinions__opinion:hover {
 body.dark-mode .main__recipes__article,
 body.dark-mode .main__opinions__opinion {
   background-color: #2f2f2f;
+}
+
+body.dark-mode::-webkit-scrollbar, 
+body.dark-mode scrollbar {
+  background-color: #2f2f2f;
+  border: #deccba 2px;
+  border-bottom: none;
+  border-top: none;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb, 
+body.dark-mode scrollbar thumb {
+  background-color: #2e7d4f;
 }
 
 /* Background Title =======================================================================================*/
