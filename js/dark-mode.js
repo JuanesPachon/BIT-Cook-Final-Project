@@ -34,24 +34,22 @@ function toggleAction() {
 // NOTE: this code is made from a CSS library!
 
 !(function () {
-  for (
-    var l = document.querySelectorAll(".my-accordion .menu"), e = 0;
-    e < l.length;
-    e++
-  )
+  for (var l = document.querySelectorAll(".my-accordion .menu"), e = 0; e < l.length; e++ )
 
     l[e].addEventListener("click", n);
+
   function n() {
-    for (
-      var e = document.querySelectorAll(".my-accordion .panel"), n = 0;
-      n < e.length;
-      n++
-    )
+    for (var e = document.querySelectorAll(".my-accordion .panel"), n = 0; n < e.length; n++ )
+
       e[n].className = "panel close";
+
     if (-1 == this.className.indexOf("active")) {
-      for (n = 0; n < l.length; n++) l[n].className = "menu";
+      for (n = 0; n < l.length; n++) 
+
+      l[n].className = "menu";
       (this.className = "menu active"),
-        (this.nextElementSibling.className = "panel open");
+      (this.nextElementSibling.className = "panel open");
+      
     } else for (n = 0; n < l.length; n++) l[n].className = "menu";
   }
 })();

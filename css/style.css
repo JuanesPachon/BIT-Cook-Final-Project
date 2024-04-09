@@ -88,6 +88,7 @@ body {
   align-items: center;
   padding: 0 20px;
   column-gap: 30px;
+  margin-top: -2rem;
 }
 
 .footer__item {
@@ -134,5 +135,15 @@ body {
 
   .footer__item--title {
     font-size: 1.4rem;
+  }
+}
+
+/* ======================================================================================================= */
+/* Desktop Mode */
+/* ======================================================================================================= */
+
+@media (min-width: 1024px) {
+  .footer {                       /* Give some space between questions section and footer */
+    margin-top: 0;
   }
 }
